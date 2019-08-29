@@ -1,8 +1,9 @@
-# A Graph-based Framework to Bridge Movies and Synopses
+# A Graph-Based Framework to Bridge Movies and Synopses
 This repo holds the code and models for the movie-synopsis association framework
-presented on ICCV2019.
+presented on ICCV2019:
 
-**A Graph-based Framework to Bridge Movies and Synopses**
+Title: **A Graph-Based Framework to Bridge Movies and Synopses**,
+ICCV19, Seoul, South Korea.
 
 Authors: 
 [Yu Xiong](http://www.xiongyu.me/home), 
@@ -10,8 +11,9 @@ Authors:
 Lingfeng Guo, 
 [Hang Zhou](https://hangz-nju-cuhk.github.io/), 
 [BoleiZhou](http://bzhou.ie.cuhk.edu.hk/), 
-[Dahua Lin](http://dahua.me/). ICCV19, Seoul, South Korea.
+[Dahua Lin](http://dahua.me/). 
 
+Useful Links:
 [[Paper]]()
 [[Supp]]()
 [[Project Page]]()
@@ -20,19 +22,19 @@ Lingfeng Guo,
 ## Getting Started
 The following instructions will get the project set up on your local machine.
 
-### Prerequisites
+### I. Prerequisites
 All the codes are tested on the following environments:
 - Linux (Ubuntu 16.04)
 - Python 3.6+
 - Pytorch xxx
 
-### Install Python Dependencies
+### II. Install Python Dependencies
 Pip install the following dependencies:
 ```
 mmcv >= 0.2.0
 ```
 
-### Install Gurobi
+### III. Install Gurobi
 Gurobi is a powerful optimization solver. 
 We use gurobi for solving the graph matching problem. 
 Follow the instructions below to install gurobi with ``Free Academic License``.
@@ -57,20 +59,20 @@ python setup.py install
 ```
 
 #### FAQ
-Q. Python ``ImportError: libgurobi{version}.so: cannot open shared object file: No such file or directory``
+Q1. Python ``ImportError: libgurobi{version}.so: cannot open shared object file: No such file or directory``
 
-A. export gurobi lib to your LD_LIBIRARY_PATH by:
+A1. export gurobi lib to your ``LD_LIBIRARY_PATH`` by:
 ```
 export GUROBI_HOME="/path/of/gurobi810(or_other_version)/linux64" # replace the path
 export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
 ```
 
-### Fetch the code
+### VI. Fetch the code
 ```
 git clone git@github.com:ycxioooong/MovieSynopsisAssociation.git
 ```
 
-### Prepare the data
+### V. Prepare the data
 #### Download
 Download our MSA (Movie Synopsis Association) dataset from
 [Google Drive]() or [Baidu Pan]().
