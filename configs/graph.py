@@ -1,0 +1,13 @@
+dataset_type = 'GraphDataset'
+ann_root = '/mnt/SSD/movienext_meta/movieloc_meta/annotations/graph_328/'
+prefix = dict(
+    video='/mnt/SSD/movienext_meta/movieloc_data/video_graph_328',
+    syn='/mnt/SSD/movienext_meta/movieloc_data/syn_graph_328')
+data = dict(
+    tasks_per_gpu=16,
+    workers_per_gpu=8,
+    test=dict(
+        type=dataset_type,
+        ann_file=ann_root + 'test.json',
+        prefix=prefix,
+        test_mode=True))
