@@ -17,7 +17,7 @@ Useful Links:
 [[Paper]](http://xiongyu.me/src/conference/iccv19/0385.pdf)
 [[Arxiv]]()
 [[Project Page]](http://xiongyu.me/projects/moviesyn)
-[[Dataset Website](http://movienet.site)
+[[Dataset Website]](http://movienet.site)
 
 ## News
 - [10/2019] We are still cleaning and expanding this dataset.
